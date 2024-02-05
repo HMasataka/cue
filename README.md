@@ -14,8 +14,16 @@ cue version
 
 ### Eval
 
+#### cueファイル
+
 ```bash
 cue eval person.cue 
+```
+
+#### jsonファイル
+
+```bash
+cue vet person.cue person.json
 ```
 
 ### Generate json
