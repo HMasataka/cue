@@ -1,14 +1,14 @@
 #Person: {
     name: string
     age:  int & >=0 & <=120
-    sex:  string & "male" | "female"
+    // ?がついているフィールドは存在しなても良いが、存在する場合は型・制約を満たす必要がある
+    sex?:  string & "male" | "female"
 }
 
 Bob: #Person
 Bob: {
     name: "Bob"
     age: 28
-    sex: "male"
 }
 
 Alice: #Person
